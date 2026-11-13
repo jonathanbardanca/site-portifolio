@@ -1,24 +1,30 @@
-import { useState } from 'react';
-import { translations } from '../utils/translations.js';
+import { useState } from "react";
+import { translations } from "../utils/translations.js";
 
 export function Header({ lang, onToggleLang }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const t = translations[lang].nav;
 
   const navItems = [
-  { label: t.home, href: '#home' },
-  { label: t.sobre, href: '#sobre' },
-  { label: t.tecnologias, href: '#tecnologias' },
-  { label: t.projetos, href: '#projetos' },
-  { label: t.cursos, href: '#cursos' },
-  { label: t.contato, href: '#contato' },
-];
+    { label: t.home, href: "#home" },
+    { label: t.sobre, href: "#sobre" },
+    { label: t.tecnologias, href: "#tecnologias" },
+    { label: t.projetos, href: "#projetos" },
+    { label: t.cursos, href: "#cursos" },
+    { label: t.contato, href: "#contato" },
+  ];
 
   return (
     <header className="sticky top-4 z-50 mx-auto max-w-6xl px-4">
+      {/* Luz do topo acendendo suavemente e ficando fixa */}
+      <div 
+        aria-hidden="true" 
+        className="pointer-events-none absolute -top-10 right-0 -z-10 h-64 w-80 rounded-full bg-sky-500/25 blur-[95px] animate-light-down"
+      />
+
       <nav
         aria-label="Navegação principal"
-        className="flex items-center justify-between rounded-full border border-slate-800/80 bg-[#060C18]/85 px-6 py-3 backdrop-blur-md shadow-lg shadow-black/30"
+        className="flex items-center justify-between rounded-full border border-slate-800/80 bg-[#060C18]/85 px-6 py-3 backdrop-blur-md shadow-[0_0_25px_rgba(14,165,233,0.08)] shadow-black/30"
       >
         {/* Logo */}
         <a
@@ -51,17 +57,21 @@ export function Header({ lang, onToggleLang }) {
             aria-label="Alternar idioma entre Português e Inglês"
             className="cursor-pointer rounded-full border border-slate-700/80 bg-slate-900/70 px-4 py-1.5 font-mono text-xs font-medium text-slate-200 transition hover:border-sky-400/60 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
           >
-            <span className={lang === 'pt' ? 'text-sky-400 font-bold' : ''}>PT</span>
-            {' / '}
-            <span className={lang === 'en' ? 'text-sky-400 font-bold' : ''}>EN</span>
+            <span className={lang === "pt" ? "text-sky-400 font-bold" : ""}>
+              PT
+            </span>
+            {" / "}
+            <span className={lang === "en" ? "text-sky-400 font-bold" : ""}>
+              EN
+            </span>
           </button>
 
           <a
             href="/curriculo-jonathan-bardanca.pdf"
             download
-            className="rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-2 text-xs font-semibold text-slate-950 shadow-md shadow-sky-500/25 transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+            className="rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-2 text-xs font-semibold text-slate-950 shadow-[0_0_15px_rgba(14,165,233,0.4)] transition duration-300 hover:shadow-[0_0_25px_rgba(56,189,248,0.75)] hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
           >
-            {lang === 'pt' ? 'Baixar currículo' : 'Download CV'}
+            {lang === "pt" ? "Baixar currículo" : "Download CV"}
           </a>
         </div>
 
@@ -71,14 +81,29 @@ export function Header({ lang, onToggleLang }) {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
-          aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
           className="rounded-lg p-2 text-slate-300 hover:bg-slate-800 hover:text-white md:hidden"
         >
-          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
             {menuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             )}
           </svg>
         </button>
@@ -115,9 +140,9 @@ export function Header({ lang, onToggleLang }) {
             <a
               href="/curriculo-jonathan-bardanca.pdf"
               download
-              className="rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-2 text-xs font-semibold text-slate-950"
+              className="rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-5 py-2 text-xs font-semibold text-slate-950 shadow-[0_0_15px_rgba(14,165,233,0.4)]"
             >
-              {lang === 'pt' ? 'Baixar currículo' : 'Download CV'}
+              {lang === "pt" ? "Baixar currículo" : "Download CV"}
             </a>
           </div>
         </div>

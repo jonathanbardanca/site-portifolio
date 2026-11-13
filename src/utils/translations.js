@@ -1,7 +1,7 @@
 export const translations = {
   pt: {
     nav: {
-      home: 'Home',
+      home: 'Início',
       sobre: 'Sobre',
       tecnologias: 'Tecnologias',
       projetos: 'Projetos',
@@ -13,8 +13,9 @@ export const translations = {
       role: 'Desenvolvedor Full-Stack',
       description: 'Desenvolvedor de software focado em JavaScript, React e Node.js. Crio aplicações web completas com atenção a performance e UI/UX.',
       btnProjects: 'Ver projetos',
-      btnContact: 'Contato',
+      btnContact: 'Entre em contato',
       status: 'disponível para projetos',
+      scrollText: 'scroll',
     },
   },
   en: {
@@ -31,8 +32,9 @@ export const translations = {
       role: 'Full-Stack Developer',
       description: 'Software developer focused on JavaScript, React, and Node.js. I build full-stack web applications with a focus on performance and UI/UX.',
       btnProjects: 'View projects',
-      btnContact: 'Contact',
+      btnContact: 'Get in touch',
       status: 'available for projects',
+      scrollText: 'scroll',
     },
   }
 };

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
 
 export default function App() {
   const [lang, setLang] = useState("pt");
@@ -17,8 +18,9 @@ export default function App() {
       className={`min-h-screen bg-bg-primary text-white w-full overflow-x-hidden`}
     >
       <Header lang={lang} onToggleLang={toggleLang} />
-
-      <main className="w-full"></main>
+      <main className="w-full">
+        <Hero lang={lang}/>
+      </main>
 
       <footer></footer>
     </div>

@@ -11,3 +11,33 @@
   max-width: 1040px; /* Largura cravada do conteúdo central */
   margin: 0 auto;
 }
+
+@keyframes light-meet-up {
+  0% {
+    transform: translateY(30px) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-40px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes light-meet-down {
+  0% {
+    transform: translateY(-30px) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(30px) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-light-up {
+  animation: light-meet-up 3.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-light-down {
+  animation: light-meet-down 3.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
