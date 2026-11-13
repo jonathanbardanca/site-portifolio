@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Sobre } from "./components/Sobre";
+import { Tecnologias } from './components/Tecnologias';
 
 export default function App() {
   const [lang, setLang] = useState("pt");
@@ -22,6 +23,7 @@ export default function App() {
       <main className="w-full">
         <Hero lang={lang}/>
         <Sobre lang={lang}/>
+        <Tecnologias lang={lang} />
       </main>
 
       <footer></footer>
