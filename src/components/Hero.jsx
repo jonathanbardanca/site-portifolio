@@ -61,7 +61,7 @@ export function Hero({ lang }) {
           </div>
 
           {/* Redes Sociais com hover neon */}
-          <div className="mt-11 flex items-center gap-5 text-slate-400">
+          <div className="mt-14 flex items-center gap-5 text-slate-400">
             <a
               href="https://github.com/SEU-USUARIO"
               target="_blank"
@@ -117,7 +117,7 @@ export function Hero({ lang }) {
               className="absolute -inset-2 rounded-full bg-sky-500/30 blur-2xl"
             />
 
-            <div className="relative h-76 w-76 overflow-hidden rounded-full border-2 border-sky-400/50 shadow-2xl shadow-sky-500/30 sm:h-88 sm:w-88">
+            <div className="relative h-76 w-76 overflow-hidden rounded-full border-2 border-sky-400/50 shadow-2xl shadow-sky-500/30 sm:h-88 sm:w-88 z-40">
               <img
                 src={fotoPerfil}
                 alt="Retrato de Jonathan Bardança, desenvolvedor de software"
@@ -129,7 +129,7 @@ export function Hero({ lang }) {
             </div>
 
             {/* Badge de status */}
-            <div className="absolute bottom-2 left-2 flex items-center gap-2 rounded-full border border-slate-700/80 bg-[#071021]/95 px-4 py-1.5 shadow-lg backdrop-blur-md">
+            <div className="absolute bottom-2 left-2 flex items-center gap-2 rounded-full border border-slate-700/80 bg-[#071021]/95 px-4 py-1.5 shadow-lg backdrop-blur-md z-40">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-sky-400" />

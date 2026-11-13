@@ -15,7 +15,7 @@ export function Header({ lang, onToggleLang }) {
   ];
 
   return (
-    <header className="sticky top-4 z-50 mx-auto max-w-6xl px-4">
+    <header className="fixed top-4 left-0 right-0 z-100 mx-auto max-w-6xl px-4">
       {/* Luz do topo acendendo suavemente e ficando fixa */}
       <div 
         aria-hidden="true" 
@@ -24,7 +24,7 @@ export function Header({ lang, onToggleLang }) {
 
       <nav
         aria-label="Navegação principal"
-        className="flex items-center justify-between rounded-full border border-slate-800/80 bg-[#060C18]/85 px-6 py-3 backdrop-blur-md shadow-[0_0_25px_rgba(14,165,233,0.08)] shadow-black/30"
+        className="flex items-center justify-between rounded-full border border-slate-800/80 bg-[#060C18]/70 px-6 py-3 backdrop-blur-md shadow-[0_0_25px_rgba(14,165,233,0.08)] shadow-black/30 backdrop-blur-lg"
       >
         {/* Logo */}
         <a
