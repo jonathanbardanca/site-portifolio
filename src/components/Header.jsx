@@ -1,16 +1,18 @@
 import { useState } from 'react';
+import { translations } from '../utils/translations.js';
 
 export function Header({ lang, onToggleLang }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const t = translations[lang].nav;
 
   const navItems = [
-    { label: lang === 'pt' ? 'Home' : 'Home', href: '#home' },
-    { label: lang === 'pt' ? 'Sobre' : 'About', href: '#sobre' },
-    { label: lang === 'pt' ? 'Tecnologias' : 'Tech Stack', href: '#tecnologias' },
-    { label: lang === 'pt' ? 'Projetos' : 'Projects', href: '#projetos' },
-    { label: lang === 'pt' ? 'Cursos' : 'Education', href: '#cursos' },
-    { label: lang === 'pt' ? 'Contato' : 'Contact', href: '#contato' },
-  ];
+  { label: t.home, href: '#home' },
+  { label: t.sobre, href: '#sobre' },
+  { label: t.tecnologias, href: '#tecnologias' },
+  { label: t.projetos, href: '#projetos' },
+  { label: t.cursos, href: '#cursos' },
+  { label: t.contato, href: '#contato' },
+];
 
   return (
     <header className="sticky top-4 z-50 mx-auto max-w-6xl px-4">
