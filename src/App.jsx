@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Sobre } from "./components/Sobre";
 import { Tecnologias } from './components/Tecnologias';
+import {Projetos} from './components/Projetos';
 
 export default function App() {
   const [lang, setLang] = useState("pt");
@@ -24,6 +25,7 @@ export default function App() {
         <Hero lang={lang}/>
         <Sobre lang={lang}/>
         <Tecnologias lang={lang} />
+        <Projetos lang={lang} />
       </main>
 
       <footer></footer>

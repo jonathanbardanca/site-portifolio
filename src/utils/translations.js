@@ -114,6 +114,50 @@ export const translations = {
         },
       ],
     },
+
+    projetos: {
+      sectionTag: '04 / Trabalhos selecionados />',
+      title: 'Projetos',
+      tabs: {
+        estudos: 'Estudos de caso',
+        autorais: 'Autorais',
+      },
+      imagePlaceholder: '[ imagem do projeto ]',
+      items: [
+        {
+          id: 1,
+          category: 'estudos', // 'estudos' ou 'autorais'
+          title: 'Dashboard pessoal',
+          description: 'Notas, listas e autenticação JWT. API REST em Node + Express com PostgreSQL.',
+          tags: ['React', 'Next.js', 'Node', 'PostgreSQL'],
+          link: '#',
+        },
+        {
+          id: 2,
+          category: 'estudos',
+          title: 'Escritório de advocacia',
+          description: 'Site institucional com foco em clareza, navegação intuitiva e contato facilitado.',
+          tags: ['WordPress', 'UI/UX'],
+          link: '#',
+        },
+        {
+          id: 3,
+          category: 'autorais',
+          title: 'Filebox App',
+          description: 'Aplicação full-stack de edição de texto segura com assistente de IA integrado.',
+          tags: ['React', 'Node.js', 'Tailwind', 'PostgreSQL'],
+          link: '#',
+        },
+        {
+          id: 4,
+          category: 'autorais',
+          title: 'Pão da Vó Landing Page',
+          description: 'Página responsiva moderna para negócio familiar de panificação artesanal.',
+          tags: ['React', 'Tailwind CSS', 'Figma'],
+          link: '#',
+        },
+      ],
+    },
   },
   en: {
     nav: {
@@ -226,6 +270,50 @@ export const translations = {
           icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg',
           isMonochrome: true,
           image: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=600&q=80',
+        },
+      ],
+    },
+
+    projetos: {
+      sectionTag: '04 / Selected works />',
+      title: 'Projects',
+      tabs: {
+        estudos: 'Case studies',
+        autorais: 'Authorial',
+      },
+      imagePlaceholder: '[ project image ]',
+      items: [
+        {
+          id: 1,
+          category: 'estudos',
+          title: 'Personal Dashboard',
+          description: 'Notes, lists, and JWT authentication. REST API in Node + Express with PostgreSQL.',
+          tags: ['React', 'Next.js', 'Node', 'PostgreSQL'],
+          link: '#',
+        },
+        {
+          id: 2,
+          category: 'estudos',
+          title: 'Law Firm Website',
+          description: 'Institutional website focused on clarity, intuitive navigation, and easy contact.',
+          tags: ['WordPress', 'UI/UX'],
+          link: '#',
+        },
+        {
+          id: 3,
+          category: 'autorais',
+          title: 'Filebox App',
+          description: 'Full-stack secure text editing application with an integrated AI assistant.',
+          tags: ['React', 'Node.js', 'Tailwind', 'PostgreSQL'],
+          link: '#',
+        },
+        {
+          id: 4,
+          category: 'autorais',
+          title: 'Pão da Vó Landing Page',
+          description: 'Modern responsive page for an artisanal baking family business.',
+          tags: ['React', 'Tailwind CSS', 'Figma'],
+          link: '#',
         },
       ],
     },
