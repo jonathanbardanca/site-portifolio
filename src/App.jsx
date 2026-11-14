@@ -5,6 +5,7 @@ import { Sobre } from "./components/Sobre";
 import { Tecnologias } from './components/Tecnologias';
 import {Projetos} from './components/Projetos';
 import { Experiencias } from "./components/Experiencias";
+import { Contato } from './components/Contato';
 
 export default function App() {
   const [lang, setLang] = useState("pt");
@@ -28,6 +29,7 @@ export default function App() {
         <Tecnologias lang={lang} />
         <Projetos lang={lang} />
         <Experiencias lang={lang} />
+        <Contato lang={lang} />
       </main>
 
       <footer></footer>
