@@ -158,6 +158,38 @@ export const translations = {
         },
       ],
     },
+
+    experiencias: {
+      sectionTag: '05 / Trajetória & Formação />',
+      title: 'Experiências e Cursos',
+      subtitle: 'Minha jornada acadêmica, técnica e profissional no desenvolvimento de software.',
+      items: [
+        {
+          id: 1,
+          period: '2025 - Presente',
+          title: 'Análise e Desenvolvimento de Sistemas',
+          institution: 'Ensino Superior',
+          description: 'Foco em arquitetura de software, lógica avançada, engenharia de requisitos e desenvolvimento web full-stack.',
+          side: 'left', // 'left' ou 'right' para alternar na timeline
+        },
+        {
+          id: 2,
+          period: '2024 - 2025',
+          title: 'Análise e Desenvolvimento de Sistemas',
+          institution: 'Curso Técnico',
+          description: 'Foco em arquitetura de software, lógica avançada, engenharia de requisitos e desenvolvimento web full-stack.',
+          side: 'right',
+        },
+        {
+          id: 3,
+          period: '2026',
+          title: 'Desenvolvimento Full-Stack Avançado',
+          institution: 'Projetos Práticos & Especialização',
+          description: 'Criação de aplicações modernas com React, Node.js, Express, PostgreSQL, Tailwind CSS e arquiteturas limpas.',
+          side: 'left',
+        },
+      ],
+    },
   },
   en: {
     nav: {
@@ -314,6 +346,37 @@ export const translations = {
           description: 'Modern responsive page for an artisanal baking family business.',
           tags: ['React', 'Tailwind CSS', 'Figma'],
           link: '#',
+        },
+      ],
+    },
+    experiencias: {
+      sectionTag: '05 / Journey & Education />',
+      title: 'Experience & Courses',
+      subtitle: 'My academic, technical, and professional journey in software development.',
+      items: [
+        {
+          id: 1,
+          period: '2025 - Present',
+          title: 'Systems Analysis and Development',
+          institution: 'Higher Education',
+          description: 'Focus on software architecture, advanced logic, requirements engineering, and full-stack web development.',
+          side: 'left',
+        },
+        {
+          id: 2,
+          period: '2024 - 2025',
+          title: 'Advanced Full-Stack Development',
+          institution: 'Technical Course',
+          description: 'Building modern applications with React, Node.js, Express, PostgreSQL, Tailwind CSS, and clean architectures.',
+          side: 'right',
+        },
+        {
+          id: 3,
+          period: '2026',
+          title: 'Advanced Full-Stack Development',
+          institution: 'Practical Projects & Specialization',
+          description: 'Building modern applications with React, Node.js, Express, PostgreSQL, Tailwind CSS, and clean architectures.',
+          side: 'left',
         },
       ],
     },
